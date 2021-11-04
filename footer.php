@@ -8,6 +8,8 @@
             <div class="col-12">
                 &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>.
                 <?php _e('Using <a target="_blank" href="http://www.typecho.org">Typecho</a> & <a target="_blank" href="https://github.com/txperl/Story-for-Typecho">Story</a>'); ?>.
+                <!--<?php _e('<br>'); ?>-->
+                <!--<?php _e('<a rel="nofollow" href="https://beian.miit.gov.cn" target="_blank">鲁ICP备19062607号</a>'); ?>-->
             </div>
         </div>
     </div>

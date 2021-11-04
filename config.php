@@ -3,7 +3,7 @@
 // off&其他 为关闭
 
 // 导航树
-$GLOBALS['isTorTree'] = 'off'; // 默认显示文章导航树
+$GLOBALS['isTorTree'] = 'on'; // 默认显示文章导航树
 
 // 样式
 $GLOBALS['isAutoNav'] = 'off'; // 自动设置导航栏中 margin 及 width 值（推荐开启）

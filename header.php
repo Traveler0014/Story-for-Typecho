@@ -31,6 +31,7 @@ if ($GLOBALS['style_BG'] != '') {
     <link type="text/css" rel="stylesheet" href="<?php $this->options->themeUrl('assert/css/prism.css'); ?>">
     <link type="text/css" rel="stylesheet" href="<?php $this->options->themeUrl('assert/css/zoom.css'); ?>">
     <link type="text/css" rel="stylesheet" href="<?php $this->options->themeUrl('assert/css/main.css'); ?>">
+    <link rel="icon" href="<?php $this->options->themeUrl('assert/icon/icon.ico'); ?>">
     <?php if ($GLOBALS['isIconNav'] == 'on') : ?>
         <link type="text/css" rel="stylesheet" href="<?php $this->options->themeUrl('assert/css/twemoji-awesome.css'); ?>">
     <?php endif; ?>
@@ -55,13 +56,19 @@ if ($GLOBALS['style_BG'] != '') {
                 <div class="logo">
                     <div class="header-logo">
                         <!-- 标题开始 -->
-                        <span class="b">Y</span>
-                        <span class="b">U</span>
-                        <a href="<?php $this->options->siteUrl(); ?>">
-                            <span class="w">M</span>
+                        <span class="b">t</span>
+                        <span class="b">r</span>
+                        <span class="b">a</span>
+                        <span class="b">v</span>
+                        <a href="<?php if($this->user->hasLogin()): ?><?php $this->options->adminUrl(); ?><?php else: ?><?php $this->options->adminUrl('login.php'); ?><?php endif; ?>">
+                            <span class="b">o</span>
                         </a>
-                        <span class="b">O</span>
-                        <span class="b">E</span>
+                        <a href="https://note.trav.one">
+                            <span class="b">n</span>
+                        </a>
+                        <a href="<?php $this->options->siteUrl(); ?>">
+                            <span class="w">D</span>
+                        </a>
                         <!-- 标题结束 -->
                         <a id="btn-menu" href="javascript:isMenu();">
                             <span class="b">·</span>
@@ -70,21 +77,21 @@ if ($GLOBALS['style_BG'] != '') {
                             <?php if ($GLOBALS['isIconNav'] == 'on') : ?>
                                 <span id="menu-1" class="bf"><i class="twa twa-flags"></i></span>
                             <?php else : ?>
-                                <span id="menu-1" class="bf">1</span>
+                                <span id="menu-1" class="bf">页</span>
                             <?php endif; ?>
                         </a>
                         <a href="javascript:isMenu2();">
                             <?php if ($GLOBALS['isIconNav'] == 'on') : ?>
                                 <span id="menu-2" class="bf"><i class="twa twa-evergreen-tree"></i></span>
                             <?php else : ?>
-                                <span id="menu-2" class="bf">2</span>
+                                <span id="menu-2" class="bf">树</span>
                             <?php endif; ?>
                         </a>
                         <a href="javascript:isMenu3();">
                             <?php if ($GLOBALS['isIconNav'] == 'on') : ?>
                                 <span id="menu-3" class="bf"><i class="twa twa-mag"></i></span>
                             <?php else : ?>
-                                <span id="menu-3" class="bf">3</span>
+                                <span id="menu-3" class="bf">找</span>
                             <?php endif; ?>
                         </a>
                     </div>
