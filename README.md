@@ -1,3 +1,9 @@
+# Edit for my own blog [Travon](https://blog.trav.one)
+
+forked from [txperl/Story-for-Typecho](https://github.com/txperl/Story-for-Typecho)
+
+Praise Dear Txperl!
+
 ## Story
 
 每个人都有属于自已的故事，我们编织着、叙述着，只为了那个必定动人的结局。
